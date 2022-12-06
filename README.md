@@ -1,5 +1,5 @@
 # AirBnB clone MySQL project
 
-#Authors
+##Authors
     - Aitebiremen Okojie
     - Awoyemi Boluwatife
