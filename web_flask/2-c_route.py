@@ -1,28 +1,29 @@
 #!/usr/bin/python3
-
-""" Starting a Flask web application that
-listens on 0.0.0.0 port 5000"""
+"""Starting a Flask web application """
 
 from flask import Flask
 
 app = Flask(__name__)
 
+
 @app.route('/', strict_slashes=False)
-def hello():
+def hello_hbnb():
+    """Displays 'Hello HBNB!'."""
     return "Hello HBNB!"
 
 
-"""another route added"""
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
+    """Displays 'HBNB'."""
     return "HBNB"
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def cText(text):
+def ctext(text):
+    """Displays 'C' with text value"""
     text = text.replace("_", " ")
-    return "C {}". format(text)
-    
+    return "C {}".format(text)
+
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0" , port=5000) 
+    app.run(host="0.0.0.0", port=5000)
