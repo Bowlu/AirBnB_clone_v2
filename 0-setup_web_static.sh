@@ -23,7 +23,7 @@ printf %s "server {
 	autoindex off;
     }
     location /redirect_me {
-        return 301 http://graceeffiong.tech;
+        return 301 http://tade.tech;
     }
     error_page 404 /404.html;
     location /404 {
